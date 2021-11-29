@@ -36,7 +36,8 @@ int main(){
         system("cls");
         printf("******************************************\n");
         printf("**    CHUONG TRINH QUAN LY SINH VIEN    **\n");
-        printf("**      1. Nhap du lieu                 **\n");
+        printf("**       NGUYEN THE DUC                 **\n");
+		printf("**      1. Nhap du lieu                 **\n");
         printf("**      2. In danh sach sinh vien       **\n");
         printf("**      3. Sap xep sinh vien theo DTB   **\n");
         printf("**      4. Xep loai sinh vien           **\n");
@@ -100,7 +101,7 @@ int main(){
                 printf("\nBan da chon thoat chuong trinh!");
                 getch();
                 return 0;
-            default:
+          	default:
                 printf("\nKhong co chuc nang nay!");
                 printf("\nBam phim bat ky de tiep tuc!");
                 getch();
@@ -176,8 +177,7 @@ void xeploaiN(SV a[], int n){
     }
     printf("\n____________________________________\n");
 }
- 
-void xuatFile(SV a[], int n, char fileName[]){
+ void xuatFile(SV a[], int n, char fileName[]){
     FILE * fp;
     fp = fopen (fileName,"w");
     fprintf(fp, "%20s%5s%5s%10s%10s%10s%10s\n", "Ho Ten","GT", "Tuoi", "DT", "DL", "DH", "DTB");
@@ -185,4 +185,6 @@ void xuatFile(SV a[], int n, char fileName[]){
         fprintf(fp, "%20s%5s%5d%10f%10f%10f%10f\n", a[i].ten,a[i].gt, a[i].age, a[i].dT, a[i].dL, a[i].dH, a[i].dtb);
     }
     fclose (fp);
-}
+    }
+
+

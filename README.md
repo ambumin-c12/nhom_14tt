@@ -1,4 +1,4 @@
 # nhom_14tt
-# ambuin-c12(nguyễn thế đức)
+# ambumin (Nguyễn Thế Đức)
 # Nguyenducbenjamin (nguyễn trọng đức)
 
